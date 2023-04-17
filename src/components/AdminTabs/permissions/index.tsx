@@ -9,14 +9,12 @@ import {
   Button,
   Box,
   useColorModeValue,
-  BoxProps,
-  Center,
   Text,
   Checkbox,
   Switch,
 } from '@chakra-ui/react';
 import { Icon } from '@iconify/react';
-import { ReactNode, useState } from 'react';
+import { useState } from 'react';
 import { Input } from '@/components';
 
 export default function PermissionTab() {
@@ -242,22 +240,3 @@ export default function PermissionTab() {
     </Box>
   );
 }
-
-type TableThProps = {
-  children?: string | number | ReactNode;
-} & BoxProps;
-
-const TableTh = ({ children, ...rest }: TableThProps) => {
-  return (
-    <Th
-      border="none"
-      fontWeight="600"
-      fontSize="14px"
-      textTransform="capitalize"
-      w="fit-content"
-      {...rest}
-    >
-      {children}
-    </Th>
-  );
-};

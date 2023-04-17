@@ -34,7 +34,7 @@ export function NavBar() {
     'light.navbar_selected',
     'dark.navbar_selected'
   );
-  const { asPath, query } = useRouter();
+  const { asPath } = useRouter();
   console.log(asPath, 'AFE');
   const routes = [
     {

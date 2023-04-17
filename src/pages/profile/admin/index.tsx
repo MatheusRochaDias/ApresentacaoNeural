@@ -1,13 +1,10 @@
 import {
   Flex,
-  Image,
   Center,
   Button,
-  Stack,
   Box,
   Text,
   useColorModeValue,
-  Link,
   Avatar,
   Tabs,
   Tab,
@@ -16,15 +13,7 @@ import {
   TabPanels,
 } from '@chakra-ui/react';
 import { Icon } from '@iconify/react';
-import { useForm } from 'react-hook-form';
-import {
-  Input,
-  Layout,
-  PasswordTab,
-  PermissionTab,
-  UsersTab,
-  VerifyPassword,
-} from '@/components';
+import { Layout, PasswordTab, PermissionTab, UsersTab } from '@/components';
 
 export default function Home() {
   const text = useColorModeValue('light.text', 'dark.text');

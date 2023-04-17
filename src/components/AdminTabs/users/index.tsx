@@ -13,14 +13,12 @@ import {
   BoxProps,
   Center,
   Text,
-  Image,
   useDisclosure,
   Avatar,
 } from '@chakra-ui/react';
-import { useForm } from 'react-hook-form';
 import { Icon } from '@iconify/react';
 import { ReactNode } from 'react';
-import { IconModal, Input, SimpleModal, VerifyPassword } from '@/components';
+import { IconModal, Input, SimpleModal } from '@/components';
 
 export default function UsersTab() {
   const button = useColorModeValue('light.button', 'dark.button');
@@ -207,11 +205,6 @@ const AddUserModal = ({ isOpen, onClose }: addUserModalProps) => {
       </Box>
     </SimpleModal>
   );
-};
-
-type deleteUserModalProps = {
-  isOpen: boolean;
-  onClose(): void;
 };
 
 const DeleteUserModal = ({ isOpen, onClose }: addUserModalProps) => {

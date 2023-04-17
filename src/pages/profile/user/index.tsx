@@ -1,39 +1,19 @@
 import {
   Flex,
-  Image,
   Center,
   Button,
-  Stack,
   Box,
   Text,
   useColorModeValue,
-  Link,
   Avatar,
-  Tabs,
-  Tab,
-  TabList,
-  TabPanel,
-  TabPanels,
 } from '@chakra-ui/react';
 import { Icon } from '@iconify/react';
 import { useForm } from 'react-hook-form';
-import {
-  Input,
-  Layout,
-  PasswordTab,
-  PermissionTab,
-  UsersTab,
-  VerifyPassword,
-} from '@/components';
+import { Input, Layout, VerifyPassword } from '@/components';
 
 export default function Home() {
   const text = useColorModeValue('light.text', 'dark.text');
   const card = useColorModeValue('light.card', 'dark.card');
-  const tab = useColorModeValue('light.tab', 'dark.tab');
-  const tab_selected = useColorModeValue(
-    'light.tab_selected',
-    'dark.tab_selected'
-  );
   const card_border = useColorModeValue(
     'light.card_border',
     'dark.card_border'

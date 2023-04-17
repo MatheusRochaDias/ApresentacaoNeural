@@ -1,7 +1,6 @@
 import {
   Box,
   Center,
-  Divider,
   Flex,
   Text,
   Image,
@@ -13,7 +12,6 @@ import {
   MenuItem,
 } from '@chakra-ui/react';
 import { Icon } from '@iconify/react';
-import Link from 'next/link';
 import ThemeToggle from '../ThemeToggle';
 // import { useQuery } from 'react-query';
 // import { GetAuthenticatedUserData } from '~/services/hooks/useAccounts';
